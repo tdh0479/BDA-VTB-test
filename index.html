@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VietinBank GPMB</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"SVN-Gilroy"', 'system-ui', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Tailwind CSS CDN - For development only. For production, install Tailwind CSS as PostCSS plugin -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="/vietinbank-favicon.png" />
+    <link rel="stylesheet" href="/fonts/svn-gilroy.css" />
+    <style>
+      body {
+        font-family: 'SVN-Gilroy', system-ui, sans-serif;
+        background: #f8fafc;
+        background-attachment: fixed;
+        color: #1e293b; /* Slate 800 - Softer black */
+      }
+      /* Custom Scrollbar for Glass feel */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(148, 163, 184, 0.3);
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(148, 163, 184, 0.5);
+      }
+    </style>
+</head>
+  <body>
+    <div id="root"></div>
+    <div id="print-root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
